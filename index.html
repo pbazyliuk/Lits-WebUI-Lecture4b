@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lecture 4 Styling Layount BEM</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="css/application.css">
+</head>
+
+<body>
+
+   <div class="main-page">
+       
+       <div class="a-page__block">
+           
+           <div class="a-nav">
+               
+               <div class="a-nav__logo">
+                    <div class="a-logo">
+                        <a href="" class="a-logo__link">Brand</a>
+                    </div>    
+               </div>  <!-- a-nav__logo -->
+
+               <div class="a-nav__menu">
+                    <ul class="a-nav-menu">
+                        <li class="a-nav-menu__item"><a class="a-nav-menu-link" href="#">Parent</a></li>
+                        <li class="a-nav-menu__item a-nav-menu__item--active"><a class="a-nav-menu-link" href="#">Active</a></li>
+                        <li class="a-nav-menu__item"><a class="a-nav-menu-link" href="#">Item</a></li>
+                    </ul>   
+               </div>   <!-- a-nav__menu -->
+
+           </div>  <!-- a-nav -->
+
+       </div>   <!-- end a-page__block -->
+
+       <div class="a-divider"></div> 
+
+        <div class="b-page__block">
+            
+            <div class="b-buttons-list">
+
+                <div class="b-buttons-list__button">
+                    <div class="b-button">
+                        <div class="b-button__text">Button</div>
+                        <div class="b-button__sign b-button__sign--color-black"></div>
+                    </div>
+                </div>
+
+                <div class="b-buttons-list__button">
+                    <div class="b-button b-button--primary">
+                        <div class="b-button__text b-button__text--color-white">Primary</div>
+                        <div class="b-button__sign"></div>
+                    </div>
+                </div>
+                
+                <div class="b-buttons-list__button">
+                    <div class="b-button b-button--success">
+                        <div class="b-button__text b-button__text--color-white">Success</div>
+                        <div class="b-button__sign"></div>
+                    </div>
+                </div>
+                
+                <div class="b-buttons-list__button">
+                    <div class="b-button b-button--danger">
+                        <div class="b-button__text b-button__text--color-white">Danger</div>
+                        <div class="b-button__sign"></div>
+                    </div>
+                </div>
+                
+                <div class="b-buttons-list__button">
+                    <div class="b-button b-button--disabled">
+                       <div class="b-button__text b-button__text--muted">Disabled</div>
+                    </div>
+                </div>
+                
+                <div class="b-buttons-list__button">
+                    <div class="b-button">Tooltip</div>
+                </div>
+                
+                <div class="b-buttons-list__button">
+                    <div class="b-button">Modal</div>
+                </div>
+                
+                <div class="b-buttons-list__button">
+                    <div class="b-button">Off-canvas</div>
+                </div>
+                
+                <div class="b-buttons-list__button">
+                    <div class="b-button b-button--button-link">Button-link</div>
+                </div>
+
+            </div>  <!-- end buttons-list -->
+        
+        </div>  <!-- end b-page__block -->
+
+        <div class="b-divider"></div> 
+   
+         <div class="c-page__block">
+             
+            <div class="c-column-one">
+
+                    <div class="c-column-one__brot-crumbs">
+                        <ul class="c-column-one-brot-crumbs">
+                            <li class="c-column-one-brot-crumbs__item"><a href="" class="c-column-one-brot-crumbs-link">Home</a>/</li>
+                            <li class="c-column-one-brot-crumbs__item"><a href="" class="c-column-one-brot-crumbs-link">Blog</a>/</li>
+                            <li class="c-column-one-brot-crumbs__item"><a href="" class="c-column-one-brot-crumbs-link c-column-one-brot-crumbs-link--text-muted">Category</a>/</li>
+                            <li class="c-column-one-brot-crumbs__item"><a href="" class="c-column-one-brot-crumbs-link c-column-one-brot-crumbs-link--text-black">Post</a></li>
+                        </ul>
+                    </div>  <!-- end column-one__brot-crumbs -->
+            
+                    <div class="c-column-one__article">
+
+                            <div class="c-column-one-article-block">
+                               
+                               <h1 class="c-column-one-article-block__main-header">Article title</h1>
+                               <h5 class="c-column-one-article-block__sub-header">Written by Super User on 12 April. Posted in Blog</h5>
+
+                                <div class="c-column-one-article-block__panel">
+                                    <div class="c-column-one-article-block-panel">
+                                        <img src="http://www.placehold.it/244x73/eeeeee" alt="" class="c-column-one-article-block-panel__img">
+                                        <p class="c-column-one-article-block-panel__caption">Caption</p>
+                                    </div>
+
+                                </div>  <!-- c-column-one-article-block__panel -->
+                                
+
+                                <div class="c-column-one-article-block__panel c-column-one-article-block__panel--floating-right">
+                                    <div class="c-column-one-article-block-panel">
+                                        <img src="http://www.placehold.it/244x73/eeeeee" alt="" class="c-column-one-article-block-panel__img">
+                                        <p class="c-column-one-article-block-panel__caption">Caption</p>
+                                    </div>
+
+                                </div>  <!-- c-column-one-article-block__panel -->
+
+                            </div>  <!-- c-column-one-article-block -->
+                        
+                            <div class="c-column-one-lorem-block">
+                                <h3 class="c-column-one-lorem-block__header">Lorem ipsum dolor sit amet.</h3>
+                                <p class="c-column-one-lorem-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <div class="c-column-one-lorem-block__code-block">
+                                    <code class="c-column-one-lorem-block-code">&lt;div&gt; class=“myclass=“>...&lt;/div&gt;</code>
+                                </div>
+                            </div>      <!--end c-column-one-lorem-block -->
+
+                            <div class="c-column-one-divider"></div>
+                            
+                            <div class="c-column-one-text-list-block">
+                                <div class="c-column-one-text-list__first-list">
+                                    <ul class="c-column-one-list-first">
+                                        <li class="c-column-one-list-first__item c-column-one-list-first__item--text-muted">text-muted</li>
+                                        <li class="c-column-one-list-first__item c-column-one-list-first__item--text-primary">text-primary</li>
+                                        <li class="c-column-one-list-first__item c-column-one-list-first__item--text-success">text-success</li>
+                                        <li class="c-column-one-list-first__item c-column-one-list-first__item--text-warning">text-warning</li>
+                                        <li class="c-column-one-list-first__item c-column-one-list-first__item--text-danger">text-danger</li>    
+                                    </ul>
+                                </div>  <!-- end c-column-one-text-list__first-list-block -->
+
+
+                               <div class="c-column-one-text-list__second-list">
+                                    <ul class="c-column-one-list-second">
+                                       <li class="c-column-one-list-second__item"><a href="" class="a-element">a element</a></li>
+                                       <li class="c-column-one-list-second__item"><em class="em-element">em element</em></li>
+                                       <li class="c-column-one-list-second__item"><strong class="strong-element">strong</strong></li>
+                                       <li class="c-column-one-list-second__item"><code class="code-element">code element</code></li>
+                                       <li class="c-column-one-list-second__item"><del class="del-element">del element</del></li>
+                                    </ul>
+                               </div> <!-- end c-column-one-text-list__second-list -->
+
+                                <div class="text-list__third-list">
+                                    <ul class="list-third">
+                                       <li class="list-third__item"><mark href="">ins element</mark></li>
+                                       <li class="list-third__item"><mark >mark element</mark></li>
+                                       <li class="list-third__item"><q>q ‘inside’ a q element </q></li>
+                                       <li class="list-third__item"><abbr >abbr element</abbr></li>
+                                       <li class="list-third__item"><dfn >dfn element</dfn></li>
+                                    </ul>
+                                </div> <!-- end c-column-one-text-list__third-list -->
+                            </div>  <!-- end c-column-one-text-list -->
+
+                            <div class="c-column-one-button-list">
+                                <div class="c-column-one-button-list__block">
+                                    <div class="c-column-one-button-block">
+
+                                        <div class="c-column-one-button-block__button c-column-one-button-block__button--color-primary">
+                                        Badge   
+                                        </div>
+                                        <div class="c-column-one-button-block__button-round c-column-one-button-block__button--color-primary">1
+                                            
+                                        </div>  
+                                    </div>  <!-- button-block__button -->
+
+                                     <div class="c-column-one-button-block">
+                                        <div class="c-column-one-button-block__button
+                                        c-column-one-button-block__button--color-success">
+                                        Success   
+                                        </div>
+                                        <div class="c-column-one-button-block__button-round  c-column-one-button-block__button--color-success">2
+                                            
+                                        </div>  
+                                    </div>  <!-- button-block__button -->
+
+
+                                     <div class="c-column-one-button-block">
+                                        <div class="c-column-one-button-block__button
+                                        c-column-one-button-block__button--color-warning">
+                                        Warning   
+                                        </div>
+                                        <div class="c-column-one-button-block__button-round c-column-one-button-block__button--color-warning">3
+                                            
+                                        </div>  
+                                    </div>  <!-- button-block__button -->
+
+                                     <div class="c-column-one-button-block">
+                                        <div class="c-column-one-button-block__button 
+                                        c-column-one-button-block__button--color-danger">
+                                        Danger   
+                                        </div>
+                                        <div class="c-column-one-button-block__button-round c-column-one-button-block__button--color-danger">4
+                                            
+                                        </div>  
+                                    </div>  <!-- end c-column-one-button-block__button -->
+
+                                </div>  <!-- end c-column-one-button-list__block -->
+
+                            </div>  <!-- end c-column-one-button-list -->
+
+                            <div class="c-column-one-headers-block">
+
+                                <div class="c-column-one-headers-block__headers">
+                                    <h1 class="c-column-one-headers-block-header1">h1</h1>
+                                    <h2 class="c-column-one-headers-block-header2">h2</h2>
+                                    <h3 class="c-column-one-headers-block-header3">h3</h3>
+                                    <h4 class="c-column-one-headers-block-header4">h4</h4>
+                                    <h5 class="c-column-one-headers-block-header5">h5</h5>
+                                    <h6 class="c-column-one-headers-block-header6">h6</h6>
+                                
+                                </div>  <!-- end c-column-one-headers-block__headers -->
+                                
+                                <div class="c-column-one-headers-block__blockquote">
+                                        <div class="c-column-one-headers-block-blockquote-header">
+                                            Lorem ipsum dolor.
+                                        </div>
+                                        <div class="c-column-one-headers-block-blockquote">Someone famous
+                                        </div>
+
+                                </div>   <!-- end c-column-one-headers-block_blockquote -->
+                            </div>  <!-- end c-column-one-headers-block -->
+                            
+                            <div class="clearfix"></div>
+
+                           <div class="c-column-one-author-block">
+                                <div class="c-column-one-author-block__avatar">
+                                    <img src="http://www.placehold.it/50x50/eeeeee" alt="">
+                                </div>
+                                <div class="c-column-one-author-block__info">
+                                    <div class="c-column-one-author-block-title">Author</div>
+                                    <div class="c-column-one-author-block-sub-title">May 2, 2090 at 1:55 pm</div>
+                                </div> <!--  end c-column-one-author-block__info -->
+                                
+                                <div class="clearfix"></div>
+
+                                <div class="c-column-one-author-block__text">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, fdf sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna.
+                                </div>
+
+                            </div>  <!-- end c-column-one-author-block -->
+
+                            <div class="c-column-one-pages-block">
+                                <div class="c-column-one-pages-block__container">
+                                    <div class="c-column-one-pages-block-forward">&Lang;</div>
+                                    <div class="c-column-one-pages-block-one">1</div>
+                                    <div class="c-column-one-pages-block-two">2</div>
+                                    <div class="c-column-one-pages-block-tree">3</div>
+                                    <div class="c-column-one-pages-block-four">4</div>
+                                    <div class="c-column-one-pages-block-dots c-column-one-pages-block-dots--color-transparent">...</div>
+                                    <div class="c-column-one-pages-block-twenty">20</div>
+                                    <div class="c-column-one-pages-block-back">&Rang;</div>
+                                </div>
+                            </div>
+
+                    </div>  <!-- end c-column-one-column-one__article -->
+                    
+            </div>  <!-- end column-one -->
+
+            <div class="c-column-two">
+
+               <div class="c-column-two-left">
+                   
+                <div class="c-column-two__header-menu">
+                    <div class="c-column-two-header-menu">
+                        <div class="c-column-two-header-menu__title">Header</div>
+                        <div class="c-column-two-header-menu__line"></div>
+                        <ul class="c-column-two-header-menu__list">
+                            <li class="c-column-two-header-menu-list-item c-column-two-header-menu-list-item--bg-color">Active</li>
+                            <li class="c-column-two-header-menu-list-item">Parent</li>
+                            <li class="c-column-two-header-menu-list-item">Item</li>
+                        </ul>
+                    </div>
+                </div> <!-- end c-column-two__header-block -->
+                
+                <div class="c-column-two__line"></div>
+
+                <div class="c-column-two__divider-block">
+                    <div class="c-column-two-divider-block">
+                        <div class="c-column-two-divider-block__title">Divider</div>
+                        <div class="c-column-two-divider-block__text">Lorem ipsum <span class="word-color">dolor</span> sit amet, consectetur adipisicing elit.</div>
+                    </div>
+                </div>  <!-- end c-column-two__divider-block -->
+
+                <div class="c-column-two__divider-block">
+                    <div class="c-column-two-divider-block">
+                        <div class="c-column-two-header-block__title">Header</div>
+                        <div class="c-column-two-divider-block__line"></div>
+                        <div class="c-column-two-divider-block__text">Lorem ipsum <span class="word-color">dolor</span> sit amet, consectetur adipisicing elit.</div>
+                    </div>
+                </div>  <!-- end c-column-two__divider-block -->
+
+            </div><!-- c-column-two-left" -->
+
+            <div class="c-column-two-right">
+
+                        <div class="c-column-two-right__box-block">
+                            <div class="c-column-two-box-block">
+                                <div class="c-column-two-box-block__title">
+                                    Box
+                                </div>
+                                <div class="c-column-two-box-block__text">
+                                    Lorem ipsum <span class="word-color">dolor</span> sit amet, consectetur adipisicing elit.
+                                </div>
+                            </div>  <!-- end c-box-block -->
+                        </div>  <!-- end c-column-two-right__box-block -->
+
+                        <div class="c-column-two-right__box-block c-column-two-right__box-block--bg-color-primary">
+                            <div class="c-column-two-box-block c-column-two-box-block--color-primary">
+                                <div class="c-column-two-box-block__title ">
+                                    Box primary
+                                </div>
+                                <div class="c-column-two-box-block__text">
+                                    Lorem ipsum <span class="word-color">dolor</span> sit amet, consectetur adipisicing elit.
+                                </div>
+                            </div>  <!-- end  c-column-two-box-block -->
+                        </div>  <!-- column-two-right__box-block -->
+
+                        <div class="c-column-two-right__box-block c-column-two-right__box-block--bg-color-secondary">
+                            <div class="c-column-two-box-block">
+                                <div class="c-column-two-box-block__title">
+                                    Box secondary
+                                </div>
+                                <div class="c-column-two-box-block__text">
+                                    Lorem ipsum <span class="word-color">dolor</span> sit amet, consectetur adipisicing elit.
+                                </div>
+                            </div>  <!--  end c-column-two-box-block -->
+                        </div>  <!--  end c-column-two-right__box-block -->
+                    <div class="clearfix"></div>
+
+            </div> <!-- c-column-two-right -->
+
+            <div class="c-column-two-left">
+
+                <div class="c-column-two__message-block">
+                    <div class="c-column-two-message-block">
+                        <div class="c-column-two-message-block__item">
+                        Info message
+                        </div>
+                    </div>  <!-- end c-column-two-message-block -->
+                
+                    <div class="c-column-two-message-block">
+                        <div class="c-column-two-message-block__item c-column-two-message-block__item--color-warning">
+                        Warning message
+                        </div>
+                    </div>  <!-- end c-column-two-message-block -->
+                
+                </div>  <!-- end c-column-two__message-block -->
+
+            </div> <!-- c-column-two-left -->
+
+            <div class="c-column-two-right">
+ 
+                <div class="c-column-two__message-block">
+                        <div class="c-column-two-message-block ">
+                                <div class="c-column-two-message-block__item c-column-two-message-block__item--color-success">
+                                    Success message
+                                </div>
+                        </div>  <!--  end c-column-two-message-block -->
+
+                        <div class="c-column-two-message-block">
+                            <div class="c-column-two-message-block__item c-column-two-message-block__item--color-danger">
+                                Danger message
+                            </div>
+                        </div>  <!--  end c-column-two-message-block -->
+
+                </div>  <!--  end c-column-two__message-block -->
+
+            </div>  <!-- c-column-two-right -->
+              
+            <div class="c-column-two-left">           
+                        
+                    <div class="c-column-two__range-block">
+                            <div class="c-column-two-range-block">
+                                <div class="c-column-two-range-block__item">
+                                    <div class="center">55%</div>
+                                </div>
+                            </div>
+                    </div> <!-- end c-column-two__range-block -->
+
+                    <div class="c-column-two__range-block">
+                            <div class="c-column-two-range-block">
+                                <div class="c-column-two-range-block__item c-column-two-range-block__item--color-warning">
+                                    <div class="center">55%</div>
+                                </div>
+                            </div>
+                    </div> <!-- end c-column-two__range-block -->
+       
+             </div>    <!--  c-column-two-left        --> 
+
+            <div class="c-column-two-right">
+
+                    <div class="c-column-two__range-block">
+                            <div class="c-column-two-range-block">
+                                <div class="c-column-two-range-block__item c-column-two-range-block__item--color-success">
+                                    <div class="center">55%</div>
+                                </div>
+                            </div>
+                    </div> <!-- end c-column-two__range-block -->
+
+                            <div class="c-column-two__range-block">
+                                <div class="c-column-two-range-block">
+                                    <div class="c-column-two-range-block__item c-column-two-range-block__item--color-danger">
+                                        <div class="center">55%</div>
+                                    </div>
+                                </div>
+                            </div> <!-- end c-column-two__range-block -->
+
+            </div>  <!-- c-column-two-left -->
+
+              <div class="c-column-two-left"> 
+
+                    <div class="c-column-two__form-states-first">
+                        <div class="c-column-two-form-states-first-container">
+                            <div class="c-column-two-form-states-first__title">Form States</div>
+                            <div class="c-column-two-form-states-first__divider"></div>
+                            <div class="c-column-two-form-states-first__item">Text input</div>
+                            <div class="c-column-two-form-states-first__item c-column-two-form-states-first__item--color-success">form-success</div>
+                            <div class="c-column-two-form-states-first__item c-column-two-form-states-first__item--color-danger">form-danger</div>
+                            <div class="c-column-two-form-states-first__item c-column-two-form-states-first__item--color-disabled">form-disabled</div>
+                        </div>     <!-- c-column-two-form-states-first-container -->
+                    </div>  <!-- c-column-two__form-states-first -->
+            </div>        <!-- c-column-two-left -->
+
+            <div class="c-column-two-right">
+
+                <div class="c-column-two__form-states-first">
+                    <div class="c-column-two-form-states-first-container">
+                        <div class="c-column-two-form-states-first__title">Form States</div>
+                        <div class="c-column-two-form-states-first__divider"></div>
+                        
+                        <div class="c-column-two-form-states-second__form-large">
+                            form-large
+                        </div>
+                        <div class="c-column-two-form-states-second__large">
+                            Large
+                        </div>
+                        
+                        <div class="clearfix"></div>
+
+                        <div class="c-column-two-form-states-second__form-small">
+                            form-small
+                        </div>
+                        <div class="c-column-two-form-states-second__small">
+                            Small
+                        </div>
+                        
+                        <div class="clearfix"></div>
+
+                        <div class="c-column-two-form-states-second__form-mini">
+                            form-blank
+                        </div>
+                        <div class="c-column-two-form-states-second__mini">
+                            Mini
+                        </div>
+                    </div>     <!-- end c-column-two-form-states-second-container -->
+                    
+                </div>  <!-- c-column-two__form-states-first -->
+
+            </div> <!-- end c-column-two-right -->
+
+        </div> <!-- c-column-two -->
+        
+    </div>                
+
+        <div class="clearfix"></div>
+
+        <div class="c-column-two-divider-last"></div>
+
+        <div class="d-page__block">
+
+          <div class="d-menus-block">
+              
+              <ul class="d-menus-block__first-item">
+                  <li class="d-menus-block-first-item d-menus-block-first-item--left-margin">Active</li>
+                  <li class="d-menus-block-first-item-line"></li>
+                  <li class="d-menus-block-first-item">Item</li>
+                  <li class="d-menus-block-first-item-line"></li>
+                  <li class="d-menus-block-first-item d-menus-block-first-item--color-text">Disabled</li>
+              </ul> <!-- end d-menus-block__first-item -->
+            
+
+                <ul class="d-menus-block__second-item">
+                  <li class="d-menus-block-second-item d-menus-block-second-item--color-bg">Active</li>
+                 
+                  <li class="d-menus-block-second-item">Item</li>
+                  
+                  <li class="d-menus-block-second-item d-menus-block-second-item--color-text">Disabled</li>
+              </ul> <!-- end d-menus-block__second-item -->
+
+              <ul class="d-menus-block__third-item">
+                  <li class="d-menus-block-third-item d-menus-block-third-item--border">Active</li>
+                  <li class="d-menus-block-third-item">
+                        <ul class="d-menus-block__third-subitem">
+                           <li class="d-menus-block-third-subitem">Item</li>
+                            <li class="d-menus-block-third-subitem d-menus-block-third-subitem--color-text">Disabled</li>
+                        </ul>
+                  </li> 
+              </ul>     <!-- end "d-menus-block__third-item -->
+
+              <div class="d-icons-block">
+                    <div class="d-icons-block__item">
+                 
+                      <div class="d-icons-block-container__item"><i class="fa fa-github"></i></div>
+                      <div class="d-icons-block-container__item"><i class="fa fa-twitter"></i>
+                        </div>
+                      <div class="d-icons-block-container__item"><i class="fa fa-dribbble"></i></div>
+                      <div class="d-icons-block-container__item"><i class="fa fa-html5"></i></div>
+                  
+                    </div>  <!-- end d-icons-block__item -->
+
+              </div>    <!-- end d-icons-block -->
+
+            </div>   <!-- end d-menus-block -->
+
+
+          </div>    <!-- end d-page-block -->
+
+
+          <div class="clearfix"></div>
+    
+          <div class="divider-last"></div>
+        
+        <div class="e-page-block">
+            <div class="e-lists-item-block__item">
+
+                <ul class="e-lists-first-item-block">
+                   <li class="e-lists-first-item-block__item e-lists-first-item-block__item--top-pading">List Item1</li>
+                    <li class="e-lists-first-item-block__item">List Item2</li>
+                    <li class="e-lists-first-item-block__item e-lists-first-item-block__item--bottom-border">List Item3</li> 
+                </ul> <!-- end e-lists-first-item-block -->
+
+                <div class="e-divider-vertical-first"></div>
+
+                <ul class="e-lists-second-item-block">
+                   <li class="e-lists-second-item-block__item ">List Item1</li>
+                    <li class="e-lists-second-item-block__item e-lists-second-item-block__item--transparent">List Item2</li>
+                    <li class="e-lists-second-item-block__item">List Item3</li> 
+                </ul>   <!-- end e-lists-second-item-block -->
+
+                <div class="e-divider-vertical-second"></div>
+
+                <ul class="e-lists-third-item-block">
+                    <li class="e-lists-third-item-block__item e-lists-third-item-block__item--caption">Table caption</li>
+                    <li class="e-lists-third-item-block__item">Table <span class="left-margin">Heading</span></li>
+                    <li class="e-lists-third-item-block__item e-lists-third-item-block__item--color-bg">Table <span class="left-margin">Data</span></li>
+                    <li class="e-lists-third-item-block__item">Table <span class="left-margin">Data</span></li>
+                </ul>   <!-- end e-lists-third-item-block -->
+                
+                <div class="e-divider-vertical-second"></div>
+                    
+                <ul class="e-lists-four-item-block">
+                    <li class="e-lists-four-item-block__item">Description lists</li>
+                    <li class="e-lists-four-item-block__item e-lists-four-item-block__item--color-text">Description text.</li>
+                    <li><div class="e-divider-list"></div></li>
+                    <li class="e-lists-four-item-block__item">Description lists</li>
+                    <li class="e-lists-four-item-block__item e-lists-four-item-block__item--color-text">Description text.</li>
+                </ul>   <!-- e-lists-four-item-block -->
+
+            </div>  <!-- e-lists-item-block__item -->
+        
+        </div>      <!-- end e-page-block -->
+              
+   </div>    <!-- end main-page -->
+
+</body>
+
+</html>

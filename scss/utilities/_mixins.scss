@@ -1,0 +1,33 @@
+// ==========================================================================
+// Mixins
+// ==========================================================================
+
+// Text align-center
+
+ @mixin center-align {
+	text-align: center;
+} 
+
+
+// BEM selectors
+
+@mixin e($element) {
+	&__#{$element} {
+    @content;
+  }
+}
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+// Triangle
+	
+@mixin triangle($border-top:5px, $border-left:5px, $border-right:5px, $color:$white) {
+  border-top: $border-top solid $color;
+  border-left: $border-left solid $transparent;
+  border-right:$border-right solid $transparent;
+  height: 0px;
+  width: 0px;
+}

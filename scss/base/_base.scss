@@ -1,0 +1,55 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+/* General Styles */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	width: 78.2%;
+	margin: 10.75%;
+	color: $text-main;
+  	font-size: em($base__font-size);
+   	font-family: $font-family--primary;
+  	line-height: $base__line;
+
+  	@media ($break-maxW-small-phone) {
+  		min-width: 100%;
+  			margin: 0;
+  	}
+  
+    @media screen and ($break-maxW-phone) and ($break-minW-phone) {
+      min-width: 100%;
+      margin: 0;
+    }
+    
+     @media screen and ($break-maxW-tablet) and ($break-minW-tablet) {
+      min-width: 100%;
+      margin: 0;
+    }
+}
+
+h1 {
+	font-size: em(36px);
+}
+
+h3 {
+	font-size: em(18px);
+}
+
+img {
+   	max-width: 100%;
+  	height: auto;
+}
+
+ul,
+li {
+  	margin: 0;
+  	padding: 0;
+  	list-style-type: none;
+}

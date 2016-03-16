@@ -1,0 +1,22 @@
+// ==========================================================================
+// Functions
+// ==========================================================================
+
+// Import if Google Fonts URL is defined
+
+/* Add Google Font and Icon Font */
+
+ @if variable-exists(font-url--google) {
+  @import url($font-url--google);
+}
+
+ @if variable-exists(font-url--icon) {
+  @import url($font-url--icon);
+}
+
+// Calculate em values
+
+@function em($target, $context: $base__font-size) {
+	@return ($target / $context) * 1em;
+}
+

@@ -1,0 +1,389 @@
+// ==========================================================================
+// FOOTER === Menu block + List Items block
+// ==========================================================================
+
+	/* Footer Styles */
+
+	/* menus-block */
+	
+	.d-menus-block {
+		margin-bottom: 35px;
+
+		@media ($break-maxW-small-phone) {
+  			@include center-align;
+  		}
+
+  		@media screen and ($break-maxW-phone) and ($break-minW-phone) {
+		    @include center-align;
+    	}	
+	}
+
+	.d-menus-block__first-item{
+		margin-right: 9.71%;
+		float: left;
+
+		@media ($break-maxW-small-phone) {
+  			float: none;
+			display: block;
+			width: 100%;
+			margin-bottom: 35px;
+  		}
+
+  		@media screen and ($break-maxW-phone) and ($break-minW-phone) {
+		    float: left;
+			display: block;
+			width: 100%;
+			margin-bottom: 35px;
+    	}
+
+    	@media screen and ($break-maxW-tablet) and ($break-minW-tablet) {
+	      margin-bottom: 35px;
+	    }
+	}
+	
+	.d-menus-block-first-item {
+		display: inline-block;
+		margin-right: 10.5px;
+		margin-left: 10.5px;
+		color: $text-blue;
+		font-size: $base__font-size;	
+
+			@include m(left-margin) {
+				margin-left: 0;
+			}
+	}
+
+	.d-menus-block-first-item-line {
+		display: inline-block;
+		width: 2px;
+		height: 10px;
+		background-color: $grey;
+	
+			@include m(color-text) {
+				color:$text-muted;
+				margin-right: 0;
+			}
+	}
+
+
+	/* d-menus-block__second-item */
+
+	.d-menus-block__second-item  {
+		margin-right: 8.75%;
+		float: left;
+
+		@media ($break-maxW-small-phone) {
+  			float: none;
+			display: block;
+			width: 100%;
+			margin-bottom: 35px;
+  		}
+
+  		@media screen and ($break-maxW-phone) and ($break-minW-phone) {
+		    float: left;
+			display: block;
+			width: 100%;
+			margin-bottom: 35px;
+    	}
+
+    	@media screen and ($break-maxW-tablet) and ($break-minW-tablet) {
+	      	margin-bottom: 35px;
+	    }
+	}
+
+	.d-menus-block-second-item {
+		display: inline-block;
+		margin-right: 28px;
+		color: $text-blue;	
+
+			@include m(color-bg) {
+				  background-color: $primary;
+				  color: $white;
+				  padding: 4px 9px 2px;
+				  margin-right: 19px;
+			}
+
+			@include m(color-text) {
+				color:$text-muted;
+				margin-right: 0;
+			}
+
+	}
+
+
+	/* d-menus-block__third-item */
+
+	.d-menus-block__third-item {
+		display: inline-block;
+		margin-right: 36px;
+
+		@media ($break-maxW-small-phone) {
+  			float: none;
+			display: block;
+			width: 100%;
+			margin-bottom: 35px;
+  		}
+
+  		@media screen and ($break-maxW-phone) and ($break-minW-phone) {
+		    float: left;
+			display: block;
+			width: 100%;
+			margin-bottom: 35px;
+    	}
+
+    	@media screen and ($break-maxW-tablet) and ($break-minW-tablet) {
+	      	margin-bottom: 35px;
+	    }	
+	}
+
+	.d-menus-block__third-subitem {
+		padding-left: 18px;
+		padding-bottom: 11px;
+		border-bottom: 2px solid $grey;
+	}
+
+	
+	.d-menus-block-third-item {
+		display: inline-block;
+		color: $text-blue;
+		margin-left: -5px; 
+
+		@include m(border) {
+				border-top: 2px solid $grey;
+				border-left: 2px solid $grey;
+				border-right: 2px solid $grey;
+				padding: 11px 12px 11px 12px;
+				color:$text-main;
+		}
+	}
+
+	.d-menus-block-third-subitem {
+		display: inline-block;
+		padding-right: 31px;
+
+		@include m(color-text) {
+				color:$text-muted;
+				margin-right: 0;
+				padding-right: 58px;
+			}
+	}
+
+
+	/* .icons-block */
+	
+	.d-icons-block	 {
+		display: inline-block;
+
+		@media screen and ($break-maxW-phone) and ($break-minW-phone) {
+		    float: left;
+			display: block;
+			width: 100%;
+			margin-bottom: 35px;
+    	}
+
+    	@media screen and ($break-maxW-tablet) and ($break-minW-tablet) {
+	      	margin-bottom: 35px;
+	    }	
+	}
+
+	.d-icons-block-container__item {
+		display: inline-block;
+		background-color: $grey;
+		padding: 8px 12px;
+		border-radius: 50%;
+
+		@media ($break-maxW-small-phone) {
+  			margin-right: 20px;
+  		}
+	} 
+
+	.fa {
+		font-size: 16px;
+	}
+
+	.e-page-block {
+		@media screen and ($break-maxW-phone) and ($break-minW-phone) {
+		    margin: 0 auto;
+			margin-top: 35px;
+			width: 500px;
+    	}	
+	}
+
+	.e-lists-first-item-block {
+		
+		@media ($break-maxW-small-phone) {
+  			float: none;
+			display: block;
+			width: 100%;
+			margin-bottom: 35px;
+  		}
+
+  		@media screen and ($break-maxW-phone) and ($break-minW-phone) {
+		    float: left;
+			display: inline-block;
+			width: 30%;
+			margin-bottom: 35px;
+    	}
+
+
+
+
+		width: 20.3%;
+		font-weight: $font-weight--medium;
+		margin-right: 3%;
+		float:left;
+		display: inline-block;	
+	
+			@include e(item) {
+				padding-bottom: 7px;
+				padding-top: 7px;
+				border-bottom: 2px solid $grey;
+			
+				@include m(top-pading) {
+					padding-top: 0;
+				}
+
+				@include m(bottom-border) {
+					padding-bottom: 0px;
+					border-bottom:none;
+				}
+			}
+	}
+
+	.e-divider-vertical-first {
+		float: left;
+		width: 2px;
+		height: 90px;
+		background-color: $grey;
+		margin-right: 3%;
+	}
+
+
+	/* e-lists-second-item-block */
+
+	.e-lists-second-item-block {
+		
+		@media ($break-maxW-small-phone) {
+  			float: none;
+			display: block;
+			width: 100%;
+			margin-bottom: 35px;
+  		}
+
+  		@media screen and ($break-maxW-phone) and ($break-minW-phone) {
+		    float: left;
+			display: inline-block;
+			width: 30%;
+			margin-bottom: 35px;
+    	}	
+
+		width: 20.3%;
+		font-weight: $font-weight--medium;
+		margin-right: 3%;
+		float: left;	
+
+			@include e(item) {
+				padding: 7px 0 7px 5px;
+				 background-color: $light-grey;
+			
+					@include m(transparent) {
+						background-color: $white;
+					}
+			}
+
+	}
+
+	.e-divider-vertical-second {
+		float:left;
+		width: 2px;
+		height: 112px;		
+		background-color: $grey;
+		margin-right: 3%;
+
+		@media screen and ($break-maxW-phone) and ($break-minW-phone) {
+		    margin-right: 15px;
+    	}	
+	}
+
+
+	/* e-lists-third-item-block */
+
+	.e-lists-third-item-block {
+		
+		@media ($break-maxW-small-phone) {
+  			float: none;
+			display: block;
+			width: 100%;
+			margin-bottom: 35px;
+  		}
+
+  		@media screen and ($break-maxW-phone) and ($break-minW-phone) {
+		    float: left;
+			display: inline-block;
+			width: 30%;
+			margin-bottom: 35px;
+    	}	
+
+		float: left;
+		width: 20.3%;
+		margin-right: 3%;
+		font-weight: $font-weight--medium;	
+	
+			@include e(item) {
+				margin-bottom:10px; 
+				margin-left: 8px;
+				
+				@include m(caption) {
+						font-size: em(12px);
+						font-style: italic;
+						margin-bottom: 12px;
+						margin-left: 0;
+						color: $text-muted;
+				}
+
+				@include m(color-bg) {
+						background-color: $grey;
+						padding: 6px 0px 6px 8px;
+						margin-left: 0;
+				}
+			}
+		}
+
+	.left-margin {
+		margin-left: 28%;
+	}
+
+
+	/* e-lists-four-item-block */
+
+	.e-lists-four-item-block {
+		font-weight: $font-weight--medium;
+		float: left;	
+
+			@include e(item) {
+			margin-bottom: 4px;
+			}
+
+		@media screen and ($break-maxW-phone) and ($break-minW-phone) {
+		    float: left;
+			display: inline-block;
+			width: 30%;
+			margin-bottom: 35px;
+    	}	
+	}
+
+	.e-divider-list {		
+		width: 223%;
+		height: 2px;		
+		background-color: $grey;
+		margin-top: 7px;
+		margin-bottom: 7px;
+
+		@media screen and ($break-maxW-phone) and ($break-minW-phone) {
+		    width: 100%;
+    	}	
+	}
+
+	.e-lists-four-item-block__item--color-text {
+		color: $text-muted;
+	}

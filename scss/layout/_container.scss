@@ -1,0 +1,28 @@
+// ==========================================================================
+// Container Main-page
+// ==========================================================================
+
+// ==========================================================================
+
+/* Main-page Styles */
+
+.main-page {
+	width: 87.5%;
+	margin: 0 auto;
+	overflow: hidden;
+
+	@media ($break-maxW-small-phone) {
+  		width: 100%;
+		margin: 0 auto;
+  	}
+
+  	@media screen and ($break-maxW-phone) and ($break-minW-phone) {
+      min-width: 100%;
+      margin: 0;
+    }
+
+    @media screen and ($break-maxW-tablet) and ($break-minW-tablet) {
+      min-width: 100%;
+      margin: 0;
+    }
+}

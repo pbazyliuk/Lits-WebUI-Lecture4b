@@ -1,0 +1,65 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+
+// Font
+$font-url--google	   : 'https://fonts.googleapis.com/css?family=Roboto:400,300,500,700';
+$font-family--primary  :  'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+$font-url--icon        : 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css';
+
+
+// Font Weights
+
+$font-weight--light      : 300;
+$font-weight--regular    : 400;
+$font-weight--medium	 : 500; 
+$font-weight--bold       : 700;
+
+
+// Descriptive Base Colors
+
+// General Colors
+
+$white    : #fff;
+$black    : #0b0b0b;
+$grey	  : #EEEEEE;
+$light-grey	: #f5f5f5; //	color:lighten($grey,4%);
+$transparent :  transparent;
+
+// Background Colors
+
+$primary		: #00A8E6;
+$success	   	: #8CC14C;
+$danger		    : #da314b;
+$warning		: #FAA732;
+
+$pale-info		: #ebf7fd;
+$pale-success	: #f2fae3;
+$pale-danger	: #fff1f0;
+$pale-orange	: #fffceb;
+
+$box-primary    : #2d6f91;
+
+// Text Colors
+
+$text-main 		: #444444;
+$text-muted		: #9999a1;
+
+$text-blue     	: #0077dd;
+$text-muted-blue: #2d7091;
+
+// Text
+
+$base__font-size : 14px;
+$base__line      : 20px;
+
+// Media queries variables
+
+$break-maxW-small-phone      : 'max-width: 480px';
+
+$break-minW-phone      		 : 'min-width: 481px';
+$break-maxW-phone			 : 'max-width:768px';
+
+$break-minW-tablet			 : 'min-width:769px';
+$break-maxW-tablet			 : 'max-width: 1300px';

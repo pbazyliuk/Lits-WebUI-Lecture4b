@@ -1,0 +1,172 @@
+// ==========================================================================
+// HEADER BLOCK === Nav block and Buttons block
+// ==========================================================================
+
+	/* Header Styles */
+
+	/* Nav Logo */
+	
+	.a-nav {
+		background-color: $grey;
+		overflow: hidden;
+
+  		@include e(logo) {
+  		float: left;
+  		font-size: em(18px);
+  		font-weight: $font-weight--medium;
+  		padding: 8px 16px 11px 14px;
+
+  		@media ($break-maxW-small-phone) {
+  		float: none;
+		text-align: center;
+		font-size: em(20px);
+		padding: 20px 0;
+		margin-bottom: 35px;
+		background-color: $grey;
+  		}
+  	  	}
+
+  	  	@media ($break-maxW-small-phone) {
+  		background-color: $white;
+  		}
+	}
+
+	.a-logo__link {		
+	  	text-decoration: none;
+		color: $text-main;	  	
+	}
+
+
+	/* Nav Menu */
+
+	.a-nav-menu {		
+		margin: 10px 0;
+
+		@include e(item) {
+		display: inline;
+		padding: 12px 16px 12px 15px;
+		
+		@media ($break-maxW-small-phone) {
+  		display: block;
+		text-align: center;
+		font-size: em(16px);
+		background-color: $grey;
+  		}
+
+
+			@include m(active) {
+				background-color: $light-grey;
+				@media ($break-maxW-small-phone) {
+				background-color: $light-grey;
+				}
+
+			}
+		}
+
+		@media ($break-maxW-small-phone) {
+  		margin-top: 0;
+		margin-bottom: 0;
+  		}
+	}
+			
+	.a-nav-menu-link {
+		font-weight: $font-weight--bold;
+		text-decoration: none;
+		color: $text-main;
+	}
+	
+
+	/* Divider Line */
+
+	.a-divider,
+	.b-divider {
+		height: 2px;
+		margin: 35px 0;
+		background-color: $grey;
+	}
+
+	
+	/* Buttons block */
+
+	.b-buttons-list__button {		
+		display: inline-block;
+
+		@media ($break-maxW-small-phone) {
+	  		display: block;
+			font-size: em(16px);
+		@include center-align;
+  		}	
+
+  		@media screen and ($break-maxW-phone) and ($break-minW-phone) {
+		    width: 80%;
+			display: block;
+			float: none;
+			margin: 0 auto;
+			@include center-align;
+    	}
+	}
+
+
+	.b-button {
+		padding: 6px 13px 4px 11px;
+		background-color: $grey;
+		font-weight: $font-weight--medium;
+
+		@media ($break-maxW-small-phone) {
+  		padding: 13px 0;
+  		}	
+	
+			@include m(primary) {
+			background-color: $primary;
+			}
+
+			@include m(success) {
+				background-color: $success;
+			}
+
+			@include m(danger) {
+				background-color: $danger;
+			}
+
+			@include m(disabled) {
+				background-color: $light-grey;
+			}
+
+			@include m(button-link) {
+				background-color:transparent;
+				color: $text-blue;
+			}
+	}
+
+	.b-button__text {		
+		display: inline-block;
+		
+			@include m(color-white) {
+				color: $white;
+			}
+
+			@include m(muted) {
+				color:  $text-muted;
+			}
+	}
+
+	.b-button__sign {		
+		display: inline-block;
+
+		@media ($break-maxW-small-phone) {
+  		margin-left: 5px;
+  		}
+
+  		@media screen and ($break-maxW-phone) and ($break-minW-phone) {
+		    margin-left: 5px;
+    	}	
+		
+		@include triangle();
+		padding-bottom: 2px;
+		margin-left: 20px;
+		margin-right: 3px;
+			
+			@include m(color-black) {
+				border-top: 5px solid $black; 
+			}
+	}
